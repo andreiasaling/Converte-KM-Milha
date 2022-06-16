@@ -1,0 +1,72 @@
+:root {
+    --orange: #fb8b24;
+    --gray: #F2E5E2;
+    --brown: #A46F62;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+h1,
+p {
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+}
+
+#formulario {
+    background-color: var(--gray);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px 0;
+    box-shadow: 2px 2px 5px var(--brown);
+}
+
+
+input#valorKm,
+#botaoCalcular {
+    border-radius: 5px;
+    border: 1px solid var(--brown);
+    padding: 10px;
+}
+
+input#valorKm {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+
+input#valorKm:focus {
+    color: var(--brown);
+}
+
+#botaoCalcular {
+    margin: 20px 0;
+    background-color: var(--orange);
+    transition: 0.5s transform ease;
+}
+
+#botaoCalcular:hover {
+    cursor: pointer;
+    background-color: #ffa14a;
+    transform: scaleX(1.1);
+    transition: 0.5s transform ease;
+}
+
+span#resultado {
+    color: var(--brown);
+    font-weight: bold;
+    font-size: 20px;
+}
