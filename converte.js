@@ -1,4 +1,5 @@
 function calculaKmMilha () {
     let km = document.querySelector('#valorKm').value;
-    document.querySelector('#resultado').textContent = km * 1.609;
+    let result = km * 1.609;
+    document.querySelector('#resultado').textContent = result.toFixed(2);
 }
